@@ -1,7 +1,7 @@
 #!/bin/python
 #+-----------------------------------+
 #+------csv processing script--------+
-#+-----------------------------------+
+#+------Deepak Purushotham-----------+
 #+----------Apr 1, 2014--------------+
 #------------------------------------+
 
@@ -16,7 +16,6 @@ from collections import defaultdict
 # 3. make a dictionary of lists for all these 
 
 
-#PATH = "/import/analysis/rna_sequencing/pipeline/data/smrna-projects/projects/SEQ07833-38_SuperSoy_sRNA/perf"
 lookup = dict()
 d = defaultdict(list)
 cnt =0
@@ -44,7 +43,7 @@ with open("list_of_files.txt",'r') as list_of_files:
 					value = int(value)
 					
 					if key not in d :
-						d[key] = [0] * cnt
+						d[key] = [0] * cnt #intialize empty lists with a length of number of samples
 					
 					d[key][index] = value
 
