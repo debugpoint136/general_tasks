@@ -1,0 +1,1 @@
+This task involved merging whole bunch of csv files, and creating a merged csv file with a matrix of all small RNA sequences as first column and counts of these sequences, against 380 sample name columns
